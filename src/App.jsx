@@ -176,11 +176,31 @@ export default function JasminPortfolio() {
               Reach out to talk about projects, internships, or remote roles.
             </p>
             <div className="mt-6 space-y-2 text-lg">
-              <p>Email: luckettjasmin@gmail.com</p>
-              <p>Phone: (318) 730-3200</p>
-              <p>GitHub: github.com/yourusername</p>
-              <p>Portfolio: yoursite.com</p>
-            </div>
+  <p>Email: luckettjasmin@gmail.com</p>
+  <p>Phone: (318) 730-3200</p>
+
+  <p>
+    GitHub: 
+    <a 
+      href="https://github.com/LuckettJasmin-FS-4" 
+      target="_blank"
+      className="underline ml-1"
+    >
+      https://github.com/LuckettJasmin-FS-4
+    </a>
+  </p>
+
+  <p>
+    Portfolio: 
+    <a 
+      href="https://jasmin-portfolio-iota.vercel.app" 
+      target="_blank"
+      className="underline ml-1"
+    >
+      https://jasmin-portfolio-iota.vercel.app
+    </a>
+  </p>
+</div>
           </div>
         </section>
       </main>
