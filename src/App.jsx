@@ -1,181 +1,82 @@
 import pawstagramImg from "./assets/pawstagram.png";
 import travelImg from "./assets/travel.png";
 import hoppitzImg from "./assets/hoppitz.png";
+import lineChartImg from "./assets/lineChart.png";
 
 export default function JasminPortfolio() {
   const projects = [
     {
       title: "Pawstagram",
       tech: "React, Styled Components, JavaScript",
-      description:
-        "An Instagram-style social app with reusable components and features for creating, editing, and deleting posts.",
+      description: "An Instagram-style social app.",
       github: "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501a",
+      demo: "https://your-pawstagram-demo-link.com",
       image: pawstagramImg,
     },
     {
       title: "Ready Set Travel",
       tech: "HTML, CSS, JavaScript",
       description:
-        "A responsive multi-page travel website with destination pages and booking features.",
+        "A responsive multi-page travel website with booking features.",
       github: "https://github.com/ePortfolios/wdv119-LuckettJasmin-FS-2",
+      demo: "https://your-readysettravel-demo-link.com",
       image: travelImg,
     },
     {
       title: "Hoppitz Destinations",
       tech: "HTML, CSS, JavaScript",
-      description: "Modern travel site with clean UI and responsive design.",
+      description: "Modern travel site with clean UI.",
       github: "https://github.com/LuckettJasmin-FS-4/hoppitz-destinations",
+      demo: "https://your-hoppitz-demo-link.com",
       image: hoppitzImg,
+    },
+    {
+      title: "Gas Price SQL Analysis",
+      tech: "SQL, Python, Pandas, Flourish",
+      description:
+        "Analyzed U.S. gas price trends using SQL and created interactive charts.",
+      github:
+        "https://github.com/LuckettJasmin-FS-4/gas-price-sql-analysis",
+      demo:
+        "https://www.kaggle.com/code/jasminluckett/rise-of-gas-prices-in-the-u-s-a-sql-analysis",
+      lineChart:
+        "https://public.flourish.studio/visualisation/28566700/",
+      pieChart:
+        "https://public.flourish.studio/visualisation/28567731/",
+      image: lineChartImg,
     },
   ];
 
   const skills = [
     "HTML5",
     "CSS3",
-    "JavaScript (ES6+)",
+    "JavaScript",
     "React",
-    "JSX/TSX",
     "Responsive Design",
-    "Accessibility",
     "Git & GitHub",
-    "REST APIs",
-    "MySQL / SQL",
+    "SQL",
     "QA Testing",
-    "Debugging",
   ];
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="border-b bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h1 className="text-3xl font-bold tracking-tight">
-              Jasmin J. Luckett
-            </h1>
-            <p className="text-lg text-slate-600">
-              Web Developer • Front-End • QA-Oriented
-            </p>
-          </div>
-
-          <nav className="flex flex-wrap gap-3 text-sm font-medium">
-            <a href="#about" className="rounded-full px-4 py-2 hover:bg-slate-100">
-              About
-            </a>
-            <a
-              href="#projects"
-              className="rounded-full px-4 py-2 hover:bg-slate-100"
-            >
-              Projects
-            </a>
-            <a href="#skills" className="rounded-full px-4 py-2 hover:bg-slate-100">
-              Skills
-            </a>
-            <a
-              href="#contact"
-              className="rounded-full px-4 py-2 hover:bg-slate-100"
-            >
-              Contact
-            </a>
-          </nav>
-        </div>
+      <header className="border-b bg-white p-6">
+        <h1 className="text-3xl font-bold">Jasmin J. Luckett</h1>
+        <p className="text-slate-600">
+          Web Developer • Front-End • QA-Oriented
+        </p>
       </header>
 
       <main>
-        <section className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-2 md:items-center">
-          <div className="space-y-6">
-            <p className="inline-block rounded-full bg-slate-200 px-4 py-2 text-sm font-semibold">
-              Open to remote web developer and QA roles
-            </p>
-
-            <div className="space-y-4">
-              <h2 className="text-5xl font-bold leading-tight">
-                Building clean, user-friendly web experiences.
-              </h2>
-              <p className="max-w-xl text-lg text-slate-600">
-                I’m an aspiring full stack developer with experience in web
-                development, technical support, and quality assurance. I enjoy
-                creating responsive, accessible interfaces and solving technical
-                problems with care and precision.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="rounded-2xl bg-slate-900 px-6 py-3 text-white shadow-sm transition hover:-translate-y-0.5"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="rounded-2xl border border-slate-300 bg-white px-6 py-3 shadow-sm transition hover:-translate-y-0.5"
-              >
-                Contact Me
-              </a>
-            </div>
-          </div>
-
-          <div className="grid gap-4">
-            <div className="rounded-3xl border bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Focus
-              </p>
-              <h3 className="mt-3 text-2xl font-semibold">
-                Front-end development with a QA mindset
-              </h3>
-              <p className="mt-3 text-slate-600">
-                I combine design awareness, debugging skills, and user-focused
-                thinking to build practical web projects with React,
-                JavaScript, and responsive design.
-              </p>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border bg-white p-6 shadow-sm">
-                <p className="text-3xl font-bold">3+</p>
-                <p className="mt-2 text-slate-600">
-                  Portfolio-ready development projects
-                </p>
-              </div>
-              <div className="rounded-3xl border bg-white p-6 shadow-sm">
-                <p className="text-3xl font-bold">QA + Support</p>
-                <p className="mt-2 text-slate-600">
-                  Transferable real-world troubleshooting experience
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" className="mx-auto max-w-6xl px-6 py-8">
-          <div className="rounded-3xl border bg-white p-8 shadow-sm">
-            <h2 className="text-3xl font-bold">About Me</h2>
-            <p className="mt-4 max-w-4xl leading-7 text-slate-600">
-              I’m currently studying web development and building projects that
-              strengthen my skills in React, JavaScript, APIs, and responsive
-              design. My background in technical support, mobile repair, and
-              quality assurance has taught me how to troubleshoot efficiently,
-              communicate clearly, and keep the user experience at the center of
-              every solution.
-            </p>
-          </div>
-        </section>
-
+        {/* PROJECTS */}
         <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Portfolio
-              </p>
-              <h2 className="text-3xl font-bold">Featured Projects</h2>
-            </div>
-          </div>
+          <h2 className="text-3xl font-bold">Projects</h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="rounded-3xl border bg-white p-6 shadow-sm transition hover:-translate-y-1"
+                className="rounded-3xl border bg-white p-6 shadow-sm"
               >
                 <img
                   src={project.image}
@@ -183,15 +84,18 @@ export default function JasminPortfolio() {
                   className="mb-4 h-48 w-full rounded-xl object-cover"
                 />
 
-                <h3 className="text-2xl font-semibold">{project.title}</h3>
-                <p className="mt-2 text-sm font-medium text-slate-500">
+                <h3 className="text-2xl font-semibold">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-slate-500">
                   {project.tech}
                 </p>
-                <p className="mt-4 leading-7 text-slate-600">
+
+                <p className="mt-4 text-slate-600">
                   {project.description}
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-6 flex flex-wrap gap-3">
                   <a
                     href={project.github}
                     target="_blank"
@@ -200,69 +104,55 @@ export default function JasminPortfolio() {
                   >
                     View Code
                   </a>
+
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-2xl border px-4 py-2 text-sm"
+                  >
+                    Live Demo
+                  </a>
+
+                  {project.lineChart && (
+                    <a
+                      href={project.lineChart}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-2xl border border-blue-500 px-4 py-2 text-sm text-blue-600"
+                    >
+                      Line Chart
+                    </a>
+                  )}
+
+                  {project.pieChart && (
+                    <a
+                      href={project.pieChart}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-2xl border border-green-500 px-4 py-2 text-sm text-green-600"
+                    >
+                      Pie Chart
+                    </a>
+                  )}
                 </div>
               </article>
             ))}
           </div>
         </section>
 
+        {/* SKILLS */}
         <section id="skills" className="mx-auto max-w-6xl px-6 py-8">
-          <div className="rounded-3xl border bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Tech Stack
-            </p>
-            <h2 className="mt-2 text-3xl font-bold">Skills</h2>
-
-            <div className="mt-6 flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-medium"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
-          <div className="rounded-3xl bg-slate-900 p-8 text-white shadow-sm">
-            <h2 className="text-3xl font-bold">Let’s Connect</h2>
-            <p className="mt-4 max-w-2xl leading-7 text-slate-300">
-              I’m looking for opportunities in web development, front-end
-              development, and QA. Reach out to talk about projects,
-              internships, or remote roles.
-            </p>
-
-            <div className="mt-6 space-y-2 text-lg">
-              <p>Email: luckettjasmin@gmail.com</p>
-              <p>Phone: (318) 730-3200</p>
-
-              <p>
-                GitHub:
-                <a
-                  href="https://github.com/LuckettJasmin-FS-4"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="ml-1 underline"
-                >
-                  https://github.com/LuckettJasmin-FS-4
-                </a>
-              </p>
-
-              <p>
-                Portfolio:
-                <a
-                  href="https://jasmin-portfolio-iota.vercel.app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="ml-1 underline"
-                >
-                  https://jasmin-portfolio-iota.vercel.app
-                </a>
-              </p>
-            </div>
+          <h2 className="text-3xl font-bold">Skills</h2>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border px-4 py-2 text-sm"
+              >
+                {skill}
+              </span>
+            ))}
           </div>
         </section>
       </main>
