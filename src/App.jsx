@@ -2,48 +2,90 @@ import pawstagramImg from "./assets/pawstagram.png";
 import travelImg from "./assets/travel.png";
 import hoppitzImg from "./assets/hoppitz.png";
 import lineChartImg from "./assets/lineChart.png";
+import honeyChartImg from "./assets/honeyChart.png";
 
 export default function JasminPortfolio() {
   const projects = [
     {
-      title: "Pawstagram",
-      tech: "React, Styled Components, JavaScript",
-      description: "An Instagram-style social app.",
-      github: "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501a",
-      demo: "https://your-pawstagram-demo-link.com",
-      image: pawstagramImg,
-    },
-    {
-      title: "Ready Set Travel",
-      tech: "HTML, CSS, JavaScript",
+      title: "Honey Production Analysis",
+      tech: "SQL, Python, Pandas, Flourish",
       description:
-        "A responsive multi-page travel website with booking features.",
-      github: "https://github.com/ePortfolios/wdv119-LuckettJasmin-FS-2",
-      demo: "https://your-readysettravel-demo-link.com",
-      image: travelImg,
-    },
-    {
-      title: "Hoppitz Destinations",
-      tech: "HTML, CSS, JavaScript",
-      description: "Modern travel site with clean UI.",
-      github: "https://github.com/LuckettJasmin-FS-4/hoppitz-destinations",
-      demo: "https://your-hoppitz-demo-link.com",
-      image: hoppitzImg,
+        "Analyzed U.S. honey production trends using SQL and Python to identify long-term decline, top-producing states, and changes over time. Created interactive Flourish visualizations to highlight production trends and state comparisons.",
+      github: "https://github.com/LuckettJasmin-FS-4/honey-production-analysis",
+      demo:"https://www.kaggle.com/code/jasminluckett/decline-in-u-s-honey-production-a-sql-and-data-a",
+      charts: [
+        {
+          label: "Line Chart",
+          url: "https://public.flourish.studio/visualisation/28571157/",
+          style:
+            "rounded-2xl border border-amber-500 px-4 py-2 text-sm text-amber-600 transition hover:bg-amber-50",
+        },
+        {
+          label: "Bar Chart",
+          url: "https://public.flourish.studio/visualisation/28573476/",
+          style:
+            "rounded-2xl border border-yellow-500 px-4 py-2 text-sm text-yellow-700 transition hover:bg-yellow-50",
+        },
+      ],
+      image: honeyChartImg,
+      featured: true,
     },
     {
       title: "Gas Price SQL Analysis",
       tech: "SQL, Python, Pandas, Flourish",
       description:
-        "Analyzed U.S. gas price trends using SQL and created interactive charts.",
-      github:
-        "https://github.com/LuckettJasmin-FS-4/gas-price-sql-analysis",
-      demo:
-        "https://www.kaggle.com/code/jasminluckett/rise-of-gas-prices-in-the-u-s-a-sql-analysis",
-      lineChart:
-        "https://public.flourish.studio/visualisation/28566700/",
-      pieChart:
-        "https://public.flourish.studio/visualisation/28567731/",
+        "Analyzed U.S. gas price trends using SQL to identify long-term patterns, seasonal changes, and major price spikes. Created interactive Flourish visualizations to compare fuel prices and show changes over time.",
+      github: "https://github.com/LuckettJasmin-FS-4/gas-price-sql-analysis",
+      demo: "https://www.kaggle.com/code/jasminluckett/rise-of-gas-prices-in-the-u-s-a-sql-analysis",
+      charts: [
+        {
+          label: "Line Chart",
+          url: "https://public.flourish.studio/visualisation/28566700/",
+          style:
+            "rounded-2xl border border-blue-500 px-4 py-2 text-sm text-blue-600 transition hover:bg-blue-50",
+        },
+        {
+          label: "Pie Chart",
+          url: "https://public.flourish.studio/visualisation/28567731/",
+          style:
+            "rounded-2xl border border-emerald-500 px-4 py-2 text-sm text-emerald-600 transition hover:bg-emerald-50",
+        },
+      ],
       image: lineChartImg,
+      featured: true,
+    },
+    {
+      title: "Pawstagram",
+      tech: "React, Styled Components, JavaScript",
+      description:
+        "An Instagram-style social app focused on clean UI, reusable components, and responsive design.",
+      github: "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501a",
+      demo: "https://your-pawstagram-demo-link.com",
+      charts: [],
+      image: pawstagramImg,
+      featured: false,
+    },
+    {
+      title: "Ready Set Travel",
+      tech: "HTML, CSS, JavaScript",
+      description:
+        "A responsive multi-page travel website with destination pages, booking features, and polished layout design.",
+      github: "https://github.com/ePortfolios/wdv119-LuckettJasmin-FS-2",
+      demo: "https://your-readysettravel-demo-link.com",
+      charts: [],
+      image: travelImg,
+      featured: false,
+    },
+    {
+      title: "Hoppitz Destinations",
+      tech: "HTML, CSS, JavaScript",
+      description:
+        "A modern travel website with a clean interface, responsive layout, and visually engaging design.",
+      github: "https://github.com/LuckettJasmin-FS-4/hoppitz-destinations",
+      demo: "https://your-hoppitz-demo-link.com",
+      charts: [],
+      image: hoppitzImg,
+      featured: false,
     },
   ];
 
@@ -53,45 +95,177 @@ export default function JasminPortfolio() {
     "JavaScript",
     "React",
     "Responsive Design",
+    "Accessibility",
     "Git & GitHub",
     "SQL",
+    "Python",
+    "Pandas",
     "QA Testing",
+    "Debugging",
   ];
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="border-b bg-white p-6">
-        <h1 className="text-3xl font-bold">Jasmin J. Luckett</h1>
-        <p className="text-slate-600">
-          Web Developer • Front-End • QA-Oriented
-        </p>
+      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight">
+              Jasmin J. Luckett
+            </h1>
+            <p className="text-lg text-slate-600">
+              Web Developer • Front-End • QA-Oriented
+            </p>
+          </div>
+
+          <nav className="flex flex-wrap gap-3 text-sm font-medium">
+            <a
+              href="#about"
+              className="rounded-full px-4 py-2 transition hover:bg-slate-100"
+            >
+              About
+            </a>
+            <a
+              href="#projects"
+              className="rounded-full px-4 py-2 transition hover:bg-slate-100"
+            >
+              Projects
+            </a>
+            <a
+              href="#skills"
+              className="rounded-full px-4 py-2 transition hover:bg-slate-100"
+            >
+              Skills
+            </a>
+            <a
+              href="#contact"
+              className="rounded-full px-4 py-2 transition hover:bg-slate-100"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
       </header>
 
       <main>
-        {/* PROJECTS */}
-        <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
-          <h2 className="text-3xl font-bold">Projects</h2>
+        <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-br from-slate-100 via-white to-slate-200">
+          <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
+            <div className="space-y-6">
+              <p className="inline-block rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm">
+                Open to remote web developer and QA roles
+              </p>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
+              <div className="space-y-4">
+                <h2 className="text-5xl font-bold leading-tight md:text-6xl">
+                  Building clean, user-friendly web experiences.
+                </h2>
+                <p className="max-w-xl text-lg leading-8 text-slate-600">
+                  I’m an aspiring full stack developer with experience in web
+                  development, technical support, and quality assurance. I enjoy
+                  creating responsive, accessible interfaces and solving
+                  technical problems with care and precision.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#projects"
+                  className="rounded-2xl bg-slate-900 px-6 py-3 text-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  View Projects
+                </a>
+                <a
+                  href="#contact"
+                  className="rounded-2xl border border-slate-300 bg-white px-6 py-3 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  Contact Me
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-4">
+              <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                  Focus
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold">
+                  Front-end development with a QA mindset
+                </h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  I combine design awareness, debugging skills, and
+                  user-focused thinking to build practical web projects with
+                  React, JavaScript, SQL, and responsive design.
+                </p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <p className="text-3xl font-bold">5+</p>
+                  <p className="mt-2 text-slate-600">
+                    Portfolio-ready projects
+                  </p>
+                </div>
+                <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <p className="text-3xl font-bold">SQL + React</p>
+                  <p className="mt-2 text-slate-600">
+                    Growing full-stack and data skills
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="mx-auto max-w-6xl px-6 py-10">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md">
+            <h2 className="text-3xl font-bold">About Me</h2>
+            <p className="mt-4 max-w-4xl leading-8 text-slate-600">
+              I’m currently studying web development and building projects that
+              strengthen my skills in React, JavaScript, APIs, SQL, and
+              responsive design. My background in technical support, mobile
+              repair, and quality assurance has taught me how to troubleshoot
+              efficiently, communicate clearly, and keep the user experience at
+              the center of every solution.
+            </p>
+          </div>
+        </section>
+
+        <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Portfolio
+              </p>
+              <h2 className="text-3xl font-bold">Featured Projects</h2>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="rounded-3xl border bg-white p-6 shadow-sm"
+                className={`group rounded-[2rem] border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl ${
+                  project.featured ? "border-slate-900" : "border-slate-200"
+                }`}
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="mb-4 h-48 w-full rounded-xl object-cover"
-                />
+                <div className="overflow-hidden rounded-2xl">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="mb-4 h-52 w-full object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
 
-                <h3 className="text-2xl font-semibold">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-slate-500">
+                {project.featured && (
+                  <span className="mb-3 inline-flex rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                    Featured
+                  </span>
+                )}
+
+                <h3 className="text-2xl font-semibold">{project.title}</h3>
+                <p className="mt-2 text-sm font-medium text-slate-500">
                   {project.tech}
                 </p>
-
-                <p className="mt-4 text-slate-600">
+                <p className="mt-4 leading-7 text-slate-600">
                   {project.description}
                 </p>
 
@@ -100,7 +274,7 @@ export default function JasminPortfolio() {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-2xl bg-slate-900 px-4 py-2 text-sm text-white"
+                    className="rounded-2xl bg-slate-900 px-4 py-2 text-sm text-white transition hover:opacity-90"
                   >
                     View Code
                   </a>
@@ -109,50 +283,86 @@ export default function JasminPortfolio() {
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-2xl border px-4 py-2 text-sm"
+                    className="rounded-2xl border border-slate-900 px-4 py-2 text-sm transition hover:bg-slate-50"
                   >
                     Live Demo
                   </a>
 
-                  {project.lineChart && (
-                    <a
-                      href={project.lineChart}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="rounded-2xl border border-blue-500 px-4 py-2 text-sm text-blue-600"
-                    >
-                      Line Chart
-                    </a>
-                  )}
-
-                  {project.pieChart && (
-                    <a
-                      href={project.pieChart}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="rounded-2xl border border-green-500 px-4 py-2 text-sm text-green-600"
-                    >
-                      Pie Chart
-                    </a>
-                  )}
+                  {project.charts &&
+                    project.charts.map((chart) => (
+                      <a
+                        key={chart.label}
+                        href={chart.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={chart.style}
+                      >
+                        {chart.label}
+                      </a>
+                    ))}
                 </div>
               </article>
             ))}
           </div>
         </section>
 
-        {/* SKILLS */}
-        <section id="skills" className="mx-auto max-w-6xl px-6 py-8">
-          <h2 className="text-3xl font-bold">Skills</h2>
-          <div className="mt-6 flex flex-wrap gap-3">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="rounded-full border px-4 py-2 text-sm"
-              >
-                {skill}
-              </span>
-            ))}
+        <section id="skills" className="mx-auto max-w-6xl px-6 py-10">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Tech Stack
+            </p>
+            <h2 className="mt-2 text-3xl font-bold">Skills</h2>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              {skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-medium transition hover:bg-slate-100"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
+          <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-sm">
+            <h2 className="text-3xl font-bold">Let’s Connect</h2>
+            <p className="mt-4 max-w-2xl leading-8 text-slate-300">
+              I’m looking for opportunities in web development, front-end
+              development, and QA. Reach out to talk about projects,
+              internships, or remote roles.
+            </p>
+
+            <div className="mt-6 space-y-3 text-lg">
+              <p>Email: luckettjasmin@gmail.com</p>
+              <p>Phone: (318) 730-3200</p>
+
+              <p>
+                GitHub:{" "}
+                <a
+                  href="https://github.com/LuckettJasmin-FS-4"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline"
+                >
+                  LuckettJasmin-FS-4
+                </a>
+              </p>
+
+              <p>
+                Portfolio:{" "}
+                <a
+                  href="https://jasmin-portfolio-iota.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline"
+                >
+                  jasmin-portfolio-iota.vercel.app
+                </a>
+              </p>
+            </div>
           </div>
         </section>
       </main>
