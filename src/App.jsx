@@ -1,5 +1,5 @@
 
-import travelImg from "./assets/travel.png";
+
 import hoppitzImg from "./assets/hoppitz.png";
 import lineChartImg from "./assets/lineChart.png";
 import honeyChartImg from "./assets/honeyChart.png";
@@ -70,35 +70,25 @@ export default function JasminPortfolio() {
       title: "WoofBook",
       tech: "React, Styled Components, JavaScript",
       description:
-        "A Facebook-style social app where users can create, edit, and delete posts. Built with reusable React components and responsive design.",
+        "A Facebook-style social app where users can create, edit, and delete posts using reusable React components.",
       github: "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501",
-      demo: "", 
+      demo: "https://luckett-jasmin-dev2501.vercel.app",
       charts: [],
-      image: woofbookImg, 
-      featured: false,
+      image: woofbookImg,
+      featured: true,
     },
-    {
-      title: "Ready Set Travel",
-      tech: "HTML, CSS, JavaScript",
-      description:
-        "A responsive multi-page travel website with destination pages, booking features, and polished layout design.",
-      github: "https://github.com/ePortfolios/wdv119-LuckettJasmin-FS-2",
-      demo: "https://your-readysettravel-demo-link.com",
-      charts: [],
-      image: travelImg,
-      featured: false,
-    },
+    
     {
       title: "Hoppitz Destinations",
-      tech: "HTML, CSS, JavaScript",
+      tech: "React, JavaScript, CSS",
       description:
-        "A modern travel website with a clean interface, responsive layout, and visually engaging design.",
-      github: "https://github.com/LuckettJasmin-FS-4/hoppitz-destinations",
-      demo: "https://your-hoppitz-demo-link.com",
+        "A travel website featuring destinations, tours, and booking pages with a clean responsive layout.",
+      github: "https://github.com/LuckettJasmin-FS-4/YOUR-HOPPITZ-REPO",
+      demo: "https://hoppitz-destinations.vercel.app",
       charts: [],
       image: hoppitzImg,
       featured: false,
-    },
+    }
   ];
 
   const skills = [
