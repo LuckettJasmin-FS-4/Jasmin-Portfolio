@@ -1,9 +1,10 @@
-import pawstagramImg from "./assets/pawstagram.png";
+
 import travelImg from "./assets/travel.png";
 import hoppitzImg from "./assets/hoppitz.png";
 import lineChartImg from "./assets/lineChart.png";
 import honeyChartImg from "./assets/honeyChart.png";
-
+import playgroundImg from "./assets/playground.png";
+import woofbookImg from "./assets/woofbook.png";
 export default function JasminPortfolio() {
   const projects = [
     {
@@ -55,14 +56,25 @@ export default function JasminPortfolio() {
       featured: true,
     },
     {
-      title: "Pawstagram",
+      title: "Bright Minds Learning Playground",
+      tech: "React, JavaScript, Vite",
+      description:
+        "Interactive educational web app for children ages 4–12 featuring reading, math (addition, subtraction, multiplication), and color recognition games with sound effects and visual feedback.",
+      github: "https://github.com/LuckettJasmin-FS-4/Bright-Minds-Learning-playground",
+      demo: "https://bright-minds-learning-playground.vercel.app",
+      charts: [],
+      image: playgroundImg, 
+      featured: true,
+    },
+    {
+      title: "WoofBook",
       tech: "React, Styled Components, JavaScript",
       description:
-        "An Instagram-style social app focused on clean UI, reusable components, and responsive design.",
-      github: "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501a",
-      demo: "https://your-pawstagram-demo-link.com",
+        "A Facebook-style social app where users can create, edit, and delete posts. Built with reusable React components and responsive design.",
+      github: "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501",
+      demo: "", 
       charts: [],
-      image: pawstagramImg,
+      image: woofbookImg, 
       featured: false,
     },
     {
