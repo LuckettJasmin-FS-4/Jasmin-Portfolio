@@ -1,10 +1,10 @@
-
-
 import hoppitzImg from "./assets/hoppitz.png";
 import lineChartImg from "./assets/lineChart.png";
 import honeyChartImg from "./assets/honeyChart.png";
 import playgroundImg from "./assets/playground.png";
 import woofbookImg from "./assets/woofbook.png";
+import chart2Img from "./assets/chart2.png";
+
 export default function JasminPortfolio() {
   const projects = [
     {
@@ -12,8 +12,10 @@ export default function JasminPortfolio() {
       tech: "SQL, Python, Pandas, Flourish",
       description:
         "Analyzed U.S. honey production trends using SQL and Python to identify long-term decline, top-producing states, and changes over time. Created interactive Flourish visualizations to highlight production trends and state comparisons.",
-      github: "https://github.com/LuckettJasmin-FS-4/honey-production-analysis",
-      demo:"https://www.kaggle.com/code/jasminluckett/decline-in-u-s-honey-production-a-sql-and-data-a",
+      github:
+        "https://github.com/LuckettJasmin-FS-4/honey-production-analysis",
+      demo:
+        "https://www.kaggle.com/code/jasminluckett/decline-in-u-s-honey-production-a-sql-and-data-a",
       charts: [
         {
           label: "Line Chart",
@@ -32,12 +34,24 @@ export default function JasminPortfolio() {
       featured: true,
     },
     {
+      title: "Macaw Population SQL Analysis",
+      tech: "SQL, MySQL, Google Sheets",
+      description:
+        "Built a relational SQL database to analyze macaw population decline by combining species, habitat, and trade data. Used JOIN queries to uncover conservation insights and created visualizations to highlight habitat loss, conservation status, and trade activity.",
+      github: "https://github.com/LuckettJasmin-FS-4/macaw-sql-analysis",
+      demo: "https://docs.google.com/spreadsheets/d/1hnht0FmDQ2PeqxV3MG63IiCqfqs-XBkn96ZVs-DHJUU/edit?usp=sharing",
+      charts: [],
+      image: chart2Img,
+      featured: true,
+    },
+    {
       title: "Gas Price SQL Analysis",
       tech: "SQL, Python, Pandas, Flourish",
       description:
         "Analyzed U.S. gas price trends using SQL to identify long-term patterns, seasonal changes, and major price spikes. Created interactive Flourish visualizations to compare fuel prices and show changes over time.",
       github: "https://github.com/LuckettJasmin-FS-4/gas-price-sql-analysis",
-      demo: "https://www.kaggle.com/code/jasminluckett/rise-of-gas-prices-in-the-u-s-a-sql-analysis",
+      demo:
+        "https://www.kaggle.com/code/jasminluckett/rise-of-gas-prices-in-the-u-s-a-sql-analysis",
       charts: [
         {
           label: "Line Chart",
@@ -59,11 +73,12 @@ export default function JasminPortfolio() {
       title: "Bright Minds Learning Playground",
       tech: "React, JavaScript, Vite",
       description:
-        "Interactive educational web app for children ages 4–12 featuring reading, math (addition, subtraction, multiplication), and color recognition games with sound effects and visual feedback.",
-      github: "https://github.com/LuckettJasmin-FS-4/Bright-Minds-Learning-playground",
+        "Interactive educational web app for children ages 4–12 featuring reading, math, and color recognition games with sound effects and visual feedback.",
+      github:
+        "https://github.com/LuckettJasmin-FS-4/Bright-Minds-Learning-playground",
       demo: "https://bright-minds-learning-playground.vercel.app",
       charts: [],
-      image: playgroundImg, 
+      image: playgroundImg,
       featured: true,
     },
     {
@@ -71,13 +86,13 @@ export default function JasminPortfolio() {
       tech: "React, Styled Components, JavaScript",
       description:
         "A Facebook-style social app where users can create, edit, and delete posts using reusable React components.",
-      github: "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501",
+      github:
+        "https://github.com/LuckettJasmin-FS-4/luckett-jasmin-dev2501",
       demo: "https://luckett-jasmin-dev2501.vercel.app",
       charts: [],
       image: woofbookImg,
       featured: true,
     },
-    
     {
       title: "Hoppitz Destinations",
       tech: "React, JavaScript, CSS",
@@ -88,7 +103,7 @@ export default function JasminPortfolio() {
       charts: [],
       image: hoppitzImg,
       featured: false,
-    }
+    },
   ];
 
   const skills = [
@@ -201,7 +216,7 @@ export default function JasminPortfolio() {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                  <p className="text-3xl font-bold">5+</p>
+                  <p className="text-3xl font-bold">6+</p>
                   <p className="mt-2 text-slate-600">
                     Portfolio-ready projects
                   </p>
