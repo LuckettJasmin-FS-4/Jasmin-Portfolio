@@ -38,7 +38,7 @@ export default function JasminPortfolio() {
       tech: "Python, SQL, Tableau",
       description: "Interactive Tableau dashboard analyzing Nike and Puma retail sales performance, including top products, lowest performers, and category distribution.",
       image: dashboardImg,
-      github: "https://github.com/LuckettJasmin-FS-4/Nike-vs.-Puma-Retail-Sales-Analysis-Python-SQL-Power-BI-/blob/main/ReadME.md",
+      github: "https://github.com/LuckettJasmin-FS-4/Nike-vs.-Puma-Retail-Sales-Analysis-Python-SQL-Power-BI-",
       demo: "https://public.tableau.com/views/NikevsPumaSales/Dashboard1"
     },
     {
