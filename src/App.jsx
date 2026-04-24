@@ -4,7 +4,7 @@ import honeyChartImg from "./assets/honeyChart.png";
 import playgroundImg from "./assets/playground.png";
 import woofbookImg from "./assets/woofbook.png";
 import chart2Img from "./assets/chart2.png";
-
+import dashboardImg from "./assets/dashboard.png";
 export default function JasminPortfolio() {
   const projects = [
     {
@@ -32,6 +32,13 @@ export default function JasminPortfolio() {
       ],
       image: honeyChartImg,
       featured: true,
+    },
+    {
+      title: "Nike vs Puma Sales Dashboard",
+      description: "Interactive Tableau dashboard analyzing Nike and Puma retail sales performance, including top products, lowest performers, and category distribution.",
+      image: dashboardImg,
+      github: "https://github.com/LuckettJasmin-FS-4/nike-puma-retail-analysis",
+      demo: "https://public.tableau.com/views/NikevsPumaSales/Dashboard1"
     },
     {
       title: "Macaw Population SQL Analysis",
