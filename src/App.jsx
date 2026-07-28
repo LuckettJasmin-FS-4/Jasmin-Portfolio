@@ -5,8 +5,51 @@ import playgroundImg from "./assets/playground.png";
 import woofbookImg from "./assets/woofbook.png";
 import chart2Img from "./assets/chart2.png";
 import dashboardImg from "./assets/dashboard.png";
+import churnImg from "./assets/churn.png";
+import didgeridooImg from "./assets/didgeridoo.png";
+
 export default function JasminPortfolio() {
   const projects = [
+    
+      {
+        title: "Didgeridoo Wildlife Conservation",
+        tech: "React, React Router, JavaScript, CSS, Figma",
+        description:
+          "An educational website that introduces visitors to Australia's unique wildlife while promoting conservation awareness. Designed in Figma and developed with React, the site features a responsive multi-page layout with wildlife information, conservation resources, an About Us section, and opportunities for visitors to get involved.",
+        github: "https://github.com/ePortfolios/WDV229-2601-Portfolio-Project-LuckettJasmin-FS-4",
+        demo: "https://didgeridoo-wildlife-conservation.vercel.app/",
+        charts: [],
+        image: didgeridooImg,
+        featured: true,
+      },
+    
+    {
+      title: "Customer Churn Analysis Dashboard",
+      tech: "Python, SQL, Tableau",
+      description: "Built a full data pipeline using Python, SQL, and Tableau to analyze customer churn and deliver actionable business insights.",
+      image: churnImg,
+      github: "https://github.com/LuckettJasmin-FS-4/Customer-Churn-Analysis-Dashboard",
+      demo: "https://public.tableau.com/views/customerchurnanalysis_17770715753810/Dashboard1"
+    },
+    {
+      title: "Nike vs Puma Sales Dashboard",
+      tech: "Python, SQL, Tableau",
+      description: "Interactive Tableau dashboard analyzing Nike and Puma retail sales performance, including top products, lowest performers, and category distribution.",
+      image: dashboardImg,
+      github: "https://github.com/LuckettJasmin-FS-4/Nike-vs.-Puma-Retail-Sales-Analysis-Python-SQL-Power-BI-",
+      demo: "https://public.tableau.com/views/NikevsPumaSales/Dashboard1"
+    },
+    {
+      title: "Macaw Population SQL Analysis",
+      tech: "SQL, MySQL, Google Sheets",
+      description:
+        "Built a relational SQL database to analyze macaw population decline by combining species, habitat, and trade data. Used JOIN queries to uncover conservation insights and created visualizations to highlight habitat loss, conservation status, and trade activity.",
+      github: "https://github.com/LuckettJasmin-FS-4/macaw-sql-analysis",
+      demo: "https://docs.google.com/spreadsheets/d/1hnht0FmDQ2PeqxV3MG63IiCqfqs-XBkn96ZVs-DHJUU/edit?usp=sharing",
+      charts: [],
+      image: chart2Img,
+      featured: true,
+    },
     {
       title: "Honey Production Analysis",
       tech: "SQL, Python, Pandas, Flourish",
@@ -31,25 +74,6 @@ export default function JasminPortfolio() {
         },
       ],
       image: honeyChartImg,
-      featured: true,
-    },
-    {
-      title: "Nike vs Puma Sales Dashboard",
-      tech: "Python, SQL, Tableau",
-      description: "Interactive Tableau dashboard analyzing Nike and Puma retail sales performance, including top products, lowest performers, and category distribution.",
-      image: dashboardImg,
-      github: "https://github.com/LuckettJasmin-FS-4/Nike-vs.-Puma-Retail-Sales-Analysis-Python-SQL-Power-BI-",
-      demo: "https://public.tableau.com/views/NikevsPumaSales/Dashboard1"
-    },
-    {
-      title: "Macaw Population SQL Analysis",
-      tech: "SQL, MySQL, Google Sheets",
-      description:
-        "Built a relational SQL database to analyze macaw population decline by combining species, habitat, and trade data. Used JOIN queries to uncover conservation insights and created visualizations to highlight habitat loss, conservation status, and trade activity.",
-      github: "https://github.com/LuckettJasmin-FS-4/macaw-sql-analysis",
-      demo: "https://docs.google.com/spreadsheets/d/1hnht0FmDQ2PeqxV3MG63IiCqfqs-XBkn96ZVs-DHJUU/edit?usp=sharing",
-      charts: [],
-      image: chart2Img,
       featured: true,
     },
     {
@@ -112,6 +136,7 @@ export default function JasminPortfolio() {
       image: hoppitzImg,
       featured: false,
     },
+    
   ];
 
   const skills = [
@@ -304,14 +329,16 @@ export default function JasminPortfolio() {
                     View Code
                   </a>
 
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl border border-slate-900 px-4 py-2 text-sm transition hover:bg-slate-50"
-                  >
-                    Live Demo
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-2xl border border-slate-900 px-4 py-2 text-sm transition hover:bg-slate-50"
+                    >
+                      Live Demo
+                    </a>
+                  )}
 
                   {project.charts &&
                     project.charts.map((chart) => (
