@@ -7,9 +7,22 @@ import chart2Img from "./assets/chart2.png";
 import dashboardImg from "./assets/dashboard.png";
 import churnImg from "./assets/churn.png";
 import didgeridooImg from "./assets/didgeridoo.png";
+import missionControlImg from "./assets/mission_control1.png";
 
 export default function JasminPortfolio() {
   const projects = [
+
+    {
+  title: "NASA Mission Control Data Platform",
+  tech: "Python, PostgreSQL, FastAPI, React, TypeScript, Recharts",
+  description:
+    "Built an end-to-end NASA asteroid data pipeline featuring automated ingestion, data transformation, quality validation, and PostgreSQL storage. Developed and deployed an interactive React dashboard featuring asteroid analytics, hazard classifications, and recorded pipeline performance metrics.",
+  demo: "https://mission-control-data-platform.onrender.com/",
+  github: "",
+  charts: [],
+  image: missionControlImg,
+  featured: true,
+},
     
       {
         title: "Didgeridoo Wildlife Conservation",
@@ -140,30 +153,43 @@ export default function JasminPortfolio() {
   ];
 
   const skills = [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "React",
-    "Responsive Design",
-    "Accessibility",
-    "Git & GitHub",
-    "SQL",
-    "Python",
-    "Pandas",
-    "QA Testing",
-    "Debugging",
-  ];
+   
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Responsive Design",
+  "Accessibility",
+  "Node.js",
+  "Express.js",
+  "REST APIs",
+  "Python",
+  "FastAPI",
+  "SQL",
+  "PostgreSQL",
+  "MongoDB",
+  "MySQL",
+  "Pandas",
+  "ETL Pipelines",
+  "Data Visualization",
+  "Git & GitHub",
+  "Docker",
+  "Postman",
+  "QA Testing",
+  "Debugging",
+];
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-slate-900 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">
               Jasmin J. Luckett
             </h1>
             <p className="text-lg text-slate-600">
-              Web Developer • Front-End • QA-Oriented
+               Full-Stack Developer • Data Engineering Enthusiast
             </p>
           </div>
 
@@ -197,7 +223,7 @@ export default function JasminPortfolio() {
       </header>
 
       <main>
-        <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-br from-slate-100 via-white to-slate-200">
+        <section className="relative overflow-hidden border-b border-slate-900 bg-gradient-to-br from-slate-100 via-white to-slate-200">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
             <div className="space-y-6">
               <p className="inline-block rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm">
@@ -208,12 +234,15 @@ export default function JasminPortfolio() {
                 <h2 className="text-5xl font-bold leading-tight md:text-6xl">
                   Building clean, user-friendly web experiences.
                 </h2>
-                <p className="max-w-xl text-lg leading-8 text-slate-600">
-                  I’m an aspiring full stack developer with experience in web
-                  development, technical support, and quality assurance. I enjoy
-                  creating responsive, accessible interfaces and solving
-                  technical problems with care and precision.
-                </p>
+               <p className="max-w-xl text-lg leading-8 text-slate-600">
+  I'm an aspiring full-stack developer and data engineer passionate
+  about building applications that solve real-world problems.
+  I develop responsive React interfaces, build RESTful APIs,
+  and create Python data pipelines that transform raw data into
+  meaningful insights. With a background in technical support
+  and quality assurance, I bring strong problem-solving skills,
+  attention to detail, and a user-focused approach to every project.
+</p>
               </div>
 
               <div className="flex flex-wrap gap-4">
@@ -233,31 +262,29 @@ export default function JasminPortfolio() {
             </div>
 
             <div className="grid gap-4">
-              <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <div className="rounded-[2rem] border border-slate-900 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
                   Focus
                 </p>
                 <h3 className="mt-3 text-2xl font-semibold">
-                  Front-end development with a QA mindset
+                  Full-Stack Development & Data Engineering
                 </h3>
                 <p className="mt-3 leading-7 text-slate-600">
-                  I combine design awareness, debugging skills, and
-                  user-focused thinking to build practical web projects with
-                  React, JavaScript, SQL, and responsive design.
+                 I build full-stack web applications and data-driven solutions using React, TypeScript, Node.js, Python, and SQL. My projects span REST API development, database design, ETL pipelines, data visualization, and responsive user interfaces. I bring a strong foundation in quality assurance, debugging, and problem-solving to every project.
                 </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                  <p className="text-3xl font-bold">6+</p>
+                <div className="rounded-[2rem] border border-slate-900 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <p className="text-3xl font-bold">Full-Stack</p>
                   <p className="mt-2 text-slate-600">
-                    Portfolio-ready projects
+                    Web applications, APIs & data pipelines
                   </p>
                 </div>
-                <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                  <p className="text-3xl font-bold">SQL + React</p>
+                <div className="rounded-[2rem] border border-slate-900 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <p className="text-3xl font-bold">Python + React</p>
                   <p className="mt-2 text-slate-600">
-                    Growing full-stack and data skills
+Full-stack development & data engineering
                   </p>
                 </div>
               </div>
@@ -266,15 +293,12 @@ export default function JasminPortfolio() {
         </section>
 
         <section id="about" className="mx-auto max-w-6xl px-6 py-10">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md">
+          <div className="rounded-[2rem] border border-slate-900 bg-white p-8 shadow-sm transition hover:shadow-md">
             <h2 className="text-3xl font-bold">About Me</h2>
             <p className="mt-4 max-w-4xl leading-8 text-slate-600">
-              I’m currently studying web development and building projects that
-              strengthen my skills in React, JavaScript, APIs, SQL, and
-              responsive design. My background in technical support, mobile
-              repair, and quality assurance has taught me how to troubleshoot
-              efficiently, communicate clearly, and keep the user experience at
-              the center of every solution.
+             I'm a web development student and aspiring full-stack developer and data engineer with a passion for building applications that solve real-world problems. My experience includes developing responsive React applications, building RESTful APIs with Node.js and Express, designing databases, and creating Python ETL pipelines.</p>
+<p className="mt-4 max-w-4xl leading-8 text-slate-600">
+One of my recent projects, the NASA Mission Control Data Platform, combines NASA asteroid data, PostgreSQL, Python, and interactive visualizations to demonstrate end-to-end data engineering. My background in technical support and quality assurance brings a strong foundation in troubleshooting, attention to detail, and user-focused problem-solving. I'm excited to continue growing my skills and contribute to meaningful software and data-driven projects.
             </p>
           </div>
         </section>
@@ -294,7 +318,7 @@ export default function JasminPortfolio() {
               <article
                 key={project.title}
                 className={`group rounded-[2rem] border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl ${
-                  project.featured ? "border-slate-900" : "border-slate-200"
+                  project.featured ? "border-slate-900" : "border-slate-900"
                 }`}
               >
                 <div className="overflow-hidden rounded-2xl">
@@ -320,14 +344,7 @@ export default function JasminPortfolio() {
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-2xl bg-slate-900 px-4 py-2 text-sm text-white transition hover:opacity-90"
-                  >
-                    View Code
-                  </a>
+               
 
                   {project.demo && (
                     <a
@@ -359,7 +376,7 @@ export default function JasminPortfolio() {
         </section>
 
         <section id="skills" className="mx-auto max-w-6xl px-6 py-10">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md">
+          <div className="rounded-[2rem] border border-slate-900 bg-white p-8 shadow-sm transition hover:shadow-md">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
               Tech Stack
             </p>
@@ -391,17 +408,7 @@ export default function JasminPortfolio() {
               <p>Email: luckettjasmin@gmail.com</p>
               <p>Phone: (318) 730-3200</p>
 
-              <p>
-                GitHub:{" "}
-                <a
-                  href="https://github.com/LuckettJasmin-FS-4"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline"
-                >
-                  LuckettJasmin-FS-4
-                </a>
-              </p>
+             
 
               <p>
                 Portfolio:{" "}
